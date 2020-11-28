@@ -9,12 +9,12 @@ on:
       - main #master
 jobs:
   my-testin:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-last
     steps:
       - name: хеловорлд
-        run: echo "Hello, world!"
+        run: echo Hello, world!
   my-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: деплойворлд
-        run: echo "Деплойед"
+        run: echo Деплойед
