@@ -19,7 +19,7 @@ jobs:
           ls -al #выдаст пустой каталог в докере
 
       - name: гит клон май репо
-        uses: actions/checkout/v1 #типа клонируем данные
+        uses: actions/checkout@v1 #типа клонируем данные
         
       - name: глянем что склонировалось
         run: 
