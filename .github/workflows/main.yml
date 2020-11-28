@@ -1,7 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
 name: My-gith-action-2
-
+env:
+  key_sha_var:  "sha${{ github.sha }}"
 # Controls when the action will run. 
 on:
   push:
@@ -12,9 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: хеловорлд
-        run: echo Hello, world!
+        run: |
+          echo Hello, world!
+          echo "Current key_var is ${{ key_sha_var }}"
+          echo ls -al
   my-deploy:
     runs-on: ubuntu-latest
+    needs: [my-testin]
     steps:
       - name: деплойворлд
         run: echo Деплойед
