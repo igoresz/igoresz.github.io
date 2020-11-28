@@ -15,7 +15,7 @@ jobs:
       - name: хеловорлд
         run: |
           echo Hello, world!
-          echo "Current key_var is ${{ key_sha_var }}"
+          echo "Current key_var is ${{ env.key_sha_var }}"
           echo ls -al
   my-deploy:
     runs-on: ubuntu-latest
