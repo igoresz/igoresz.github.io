@@ -9,7 +9,7 @@ on:
       - main #master
 jobs:
   my-testin:
-    runs-on: ubuntu-last
+    runs-on: ubuntu-latest
     steps:
       - name: хеловорлд
         run: echo Hello, world!
