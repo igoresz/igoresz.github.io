@@ -16,7 +16,7 @@ jobs:
         run: |
           echo Hello, world!
           echo "Current key_var is ${{ env.key_sha_var }}"
-          echo ls -al
+          ls -al
   my-deploy:
     runs-on: ubuntu-latest
     needs: [my-testin]
